@@ -1,0 +1,86 @@
+.footer {
+    background: #2A8BEA;
+    border-radius: vw(30) vw(30) 0 0;
+    margin-top: vw(70);
+    @media all and (max-width: 1023px) {
+        margin-top: 40px;
+        border-radius: 30px 30px 0 0;
+    }
+    &__in {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: vw(25);
+        padding-bottom: vw(25);
+        @media all and (max-width: 1023px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__copy {
+        color: #FFF;
+        font-size: vw(20);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        margin-right: vw(100);
+        @media all and (max-width: 1023px) {
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+    }
+    &__politic {
+        margin-right: auto;
+        color: #FFF;
+        text-decoration: none;
+        font-size: vw(20);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        display: inline-block;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+        @media all and (max-width: 1023px) {
+            font-size: 16px;
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+    }
+    &__done {
+        font-size: 0;
+        display: flex;
+        flex-direction: column;
+        width: vw(120);
+        @media all and (max-width: 1023px) {
+            flex-direction: row;
+            align-items: flex-end;
+            width: 195px;
+        }
+        svg {
+            &:first-child {
+                margin-bottom: vw(8);
+                width: vw(67);
+                height: vw(13);
+                @media all and (max-width: 1023px) {
+                    margin-right: 8px;
+                    width: 67px;
+                    height: 13px;
+                    margin-bottom: -1px;
+                }
+            }
+            &:last-child {
+                width: vw(120);
+                height: vw(21);
+                @media all and (max-width: 1023px) {
+                    width: 120px;
+                    height: 21px;
+                }
+            }
+        }
+    }
+}

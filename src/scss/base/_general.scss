@@ -1,0 +1,83 @@
+body {
+    box-sizing: border-box;
+}
+*,
+::after,
+::before {
+    font-family: 'Mont', sans-serif, cursive;
+    box-sizing: inherit;
+    outline: none;
+    scroll-behavior: smooth;
+    transition: all .3s ease;
+}
+.map-block, .map-block * {
+    transition: unset;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+    height: inherit;
+}
+.ovh {
+    overflow: hidden;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.content {
+    flex: 1 0 auto;
+}
+.footer {
+    flex: 0 0 auto;
+}
+.center_block {
+    max-width: vw(1320);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: vw(20);
+    padding-right: vw(20);
+    @media all and (max-width: 1023px) {
+        max-width: 1320px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+textarea {
+    resize: none;
+}
+// scrollbar
+/* width */
+*::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+*::-webkit-scrollbar-track {
+    background: #2A8BEA;
+    border-radius: 10px 0px 0px 10px;
+}
+/* Handle */
+*::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 10px;
+}
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+// scrollbar end
+.s_button {
+    background-color: #000;
+    &:hover, &:active {
+        background-color: #2A8BEA;
+    }
+}
