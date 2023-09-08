@@ -12,7 +12,15 @@
         @@include('blocks/modules/header/header.html', {})
         <main class="content">
             @@include('blocks/modules/main_first/main_first.html', {})
-            
+            <div class="content__main">
+                @@include('blocks/modules/main_tabs/main_tabs.html', {})
+                @@include('blocks/modules/main_blocks/main_blocks.html', {})
+                @@include('blocks/modules/main_form/main_form.html', {})
+            </div>
+            @@include('blocks/modules/main_banner/main_banner.html', {})
+            @@include('blocks/modules/main_brends/main_brends.html', {})
+            @@include('blocks/modules/main_photo/main_photo.html', {})
+            @@include('blocks/modules/main_contacts/main_contacts.html', {})
         </main>
         @@include('blocks/modules/footer/footer.html', {})
         @@include('blocks/modules/modals/main.modal.html', {})

@@ -1,0 +1,59 @@
+.main_brends {
+    padding-top: vw(70);
+    padding-bottom: vw(120);
+    @media all and (max-width: 1023px) {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    &__title {
+        color: #000;
+        font-size: vw(55);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        text-transform: uppercase;
+        margin-bottom: vw(50);
+        span {
+            color: #2A8BEA;
+        }
+        @media all and (max-width: 1023px) {
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+    }
+    &__blocks {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: vw(-10);
+        margin-right: vw(-10);
+        @media all and (max-width: 1023px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    &__block {
+        margin-bottom: vw(20);
+        margin-left: vw(10);
+        margin-right: vw(10);
+        width: calc(25% - vw(20));
+        border-radius: vw(30);
+        background: #FFF;
+        height: vw(200);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0;
+        &:hover {
+            background: #2A8BEA;
+        }
+        @media all and (max-width: 1023px) {
+            margin-right: 20px;
+            width: 246px !important;
+            margin-bottom: 0;
+            height: 140px;
+            margin-left: 0;
+            display: flex !important;
+            margin-bottom: 0;
+        }
+    }
+}

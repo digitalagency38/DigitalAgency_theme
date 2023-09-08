@@ -5,6 +5,9 @@ import Vue from 'vue/dist/vue.js';
 import $ from 'jquery';
 
 import Header from '../blocks/modules/header/header.js';
+import MainTabs from '../blocks/modules/main_tabs/main_tabs.js';
+import MainBrends from '../blocks/modules/main_brends/main_brends.js';
+import MainPhoto from '../blocks/modules/main_photo/main_photo.js';
 import Modals from '../blocks/modules/modals/modals.js';
 
 window.app = new Vue({
@@ -19,6 +22,9 @@ window.app = new Vue({
         header: new Header({
             isMobileMenuOpened: false,
         }),
+        mainTabs: new MainTabs(),
+        mainBrends: new MainBrends(),
+        mainPhoto: new MainPhoto(),
         modals: new Modals({
             modalsSelector: "data-modal",
             modalsOpenerSelector: "data-modal-id",
@@ -33,6 +39,9 @@ window.app = new Vue({
     beforeMount() {
         this.isMounted = true;
         this.header.init();
+        this.mainTabs.init();
+        this.mainBrends.init();
+        this.mainPhoto.init();
         this.modals.init();
     },
     computed: {
