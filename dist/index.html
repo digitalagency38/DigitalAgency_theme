@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css?_v=20230908023206">
+    <link rel="stylesheet" href="css/style.css?_v=20230908035220">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -46,22 +46,37 @@
                         </svg>
                     </div>
                 </div>
-                <nav class="header__burger--main-menu">
-                    <ul>
-                        <li><a href="#">Предложение</a></li>
-                        <li><a href="#">Нам доверяют</a></li>
-                        <li><a href="#">Галерея</a></li>
-                    </ul>
-                </nav>
-                <div class="header__info header__info--mob">
-                    <a href="tel:79021796398" class="header__tel">+7 (902) 179-63-98</a>
-                    <button class="header__btn s_button">Заказать звонок</button>
+                <div class="header__burger--burg">
+                    <nav class="header__burger--main-menu">
+                        <ul>
+                            <li><a href="#">Предложение</a></li>
+                            <li><a href="#">Нам доверяют</a></li>
+                            <li><a href="#">Галерея</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__info header__info--mob">
+                        <a href="tel:79021796398" class="header__tel">+7 (902) 179-63-98</a>
+                        <button class="header__btn s_button">Заказать звонок</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
         <main class="content">
+            <section class="main_first" id="main_first" style="background: url('./img/bg.png') 50% / cover no-repeat;">
+    <div class="main_first__in center_block">
+        <div class="main_first__title">Эффективная реклама в Братске <br>на 5 видеоэкранах <span>от 5 990 р</span></div>
+        <div class="main_first__info">
+            <div class="main_first__txt">Охват <span>150 000 человек</span> ежедневно</div>
+            <div class="main_first__txt"><span>Центр</span> города и <span>окраины</span></div>
+        </div>
+        <div class="main_first__buttons">
+            <button class="main_first__btn s_button">Оставить заявку</button>
+            <a href="#" class="main_first__link">Скачать прайс-лист</a>
+        </div>
+    </div>
+</section>
             
         </main>
         <footer class="footer">
@@ -113,6 +128,6 @@
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20230908023206"></script>
+    <script src="js/app.min.js?_v=20230908035220"></script>
 </body>
 </html>
