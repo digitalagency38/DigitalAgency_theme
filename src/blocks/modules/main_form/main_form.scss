@@ -26,11 +26,13 @@
     }
     &__form {
         form {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            @media all and (max-width: 1023px) {
-                flex-direction: column;
+            div {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                @media all and (max-width: 1023px) {
+                    flex-direction: column;
+                }
             }
             input {
                 width: calc(33.3% - vw(10));

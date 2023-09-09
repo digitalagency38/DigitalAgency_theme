@@ -2,11 +2,15 @@
     padding-top: vw(228);
     margin-top: vw(-149);
     height: 100vh;
+    background-size: 80%, cover !important;
+    background-position: 100% 100%, 50% 50% !important;
     @media all and (max-width: 1023px) {
         padding-top: 148px;
         margin-top: -110px;
         padding-bottom: 235px;
         height: auto;
+        background-size: 150%, cover !important;
+        background-position: 84% 100%, 50% 50% !important;
     }
     &__title {
         color: #000;

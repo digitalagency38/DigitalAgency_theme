@@ -10,7 +10,7 @@ body {
     scroll-behavior: smooth;
     transition: all .3s ease;
 }
-.map-block, .map-block * {
+.main_contacts__map, .main_contacts__map * {
     transition: unset;
 }
 html,
@@ -85,5 +85,58 @@ textarea {
     background-color: #000;
     &:hover, &:active {
         background-color: #2A8BEA;
+    }
+}
+.wpcf7-spinner {
+    display: none !important;
+}
+.wpcf7-response-output {
+    position: absolute;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: vw(14);
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: red;
+    width: calc(100% - vw(200)) !important;
+    @media all and (max-width: 1023px) {
+        width: 100% !important;
+        font-size: 12px;
+        bottom: 50px;
+    }
+}
+form {
+    position: relative;
+}
+.main_form {
+    .wpcf7-response-output {
+        bottom: -20px;
+        @media all and (max-width: 1023px) {
+            bottom: -50px;
+        }
+    }
+}
+.modal__form--form {
+    .wpcf7-response-output {
+        width: 100% !important;
+    }
+}
+.form_done {
+    display: none;
+}
+.main_form__in, .modal__in {
+    &.isSent {
+        .wpcf7, .main_form__title {
+            display: none;
+        }
+        .form_done {
+            display: block;
+            .main_form__title {
+                display: block;
+            }
+        }
     }
 }

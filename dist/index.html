@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css?_v=20230908174741">
+    <link rel="stylesheet" href="css/style.css?_v=20230909170249">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -64,7 +64,7 @@
     </div>
 </header>
         <main class="content">
-            <section class="main_first" id="main_first" style="background: url('./img/bg.png') 50% / cover no-repeat;">
+            <section class="main_first" id="main_first" style="background: url('./img/bg5.png') 50% / cover no-repeat, url('./img/bg6.jpg') 50% / cover no-repeat;">
     <div class="main_first__in center_block">
         <div class="main_first__title">Эффективная реклама в Братске <br>на 5 видеоэкранах <span>от 5 990 р</span></div>
         <div class="main_first__info">
@@ -571,10 +571,25 @@
             <section class="main_contacts" id="main_contacts">
     <div class="main_contacts__in center_block">
         <div class="main_contacts__l-side">
-
+            <div class="main_contacts__title">контакты</div>
+            <div class="main_contacts__info">
+                <span>Телефон:</span>
+                <a href="tel:79021796398">+7 (902) 179-63-98</a>
+            </div>
+            <div class="main_contacts__info">
+                <span>Электронная почта:</span>
+                <a href="mailto:Firmatcom154@gmail.com">Firmatcom154@gmail.com</a>
+            </div>
+            <div class="main_contacts__info">
+                <span>Время работы:</span>
+                c 8:00 до 00:00 - летом <br>с 8:00 до 23:00 - зимой
+            </div>
         </div>
         <div class="main_contacts__r-side">
-            
+            <div class="main_contacts__tit">Наши экраны <br>на карте</div>
+            <div class="main_contacts__map">
+                <div id="map"></div>
+            </div>
         </div>
     </div>
 </section>
@@ -628,6 +643,34 @@
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20230908174741"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20230909170249" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+
+        function init() {
+        var myMap = new ymaps.Map("map", {
+            center: [55.812934, 37.528777],
+            zoom: 10
+        });
+
+        var markers = [
+            { coordinates: [55.746856, 37.663126], content: 'ул. Николоямская д.52 стр.1, офис 204' },
+            { coordinates: [55.903368, 37.384756], content: 'Куркино, ул.Соколово-Мещерская, д.25, 2 этаж, офис 35' }
+        ];
+
+        markers.forEach(function(marker) {
+            var placemark = new ymaps.Placemark(
+            marker.coordinates,
+            { content: marker.content }
+            );
+
+            myMap.geoObjects.add(placemark);
+
+            myMap.behaviors.enable('dblClickZoom');
+            placemark.options.set('draggable', true);
+        });
+        }
+    </script>
+    <script src="js/app.min.js?_v=20230909170249"></script>
 </body>
 </html>
