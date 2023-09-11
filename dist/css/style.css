@@ -490,6 +490,20 @@ template {
 @font-face {
   font-family: "Mont";
   font-display: swap;
+  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
   src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
   font-weight: 300;
 }
@@ -518,22 +532,8 @@ template {
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
   src: url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("ttf");
   font-weight: 600;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
-  font-weight: 200;
 }
 
 body {
@@ -771,7 +771,6 @@ form {
   text-align: center;
   cursor: pointer;
   font-weight: 500;
-  line-height: 140%;
   padding: 0.7291666667vw 1.3541666667vw;
 }
 
@@ -1127,7 +1126,6 @@ form {
   font-size: 0.8333333333vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%;
   padding: 1.0416666667vw 1.5625vw;
 }
 
@@ -1347,7 +1345,6 @@ form {
   padding: 1.3020833333vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%;
 }
 
 .main_form .custom-checkbox {
@@ -1445,7 +1442,6 @@ form {
   font-size: 0.8333333333vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%;
   padding: 0.9375vw;
   cursor: pointer;
   border-radius: 10px;
@@ -1794,10 +1790,17 @@ form {
   background: #fff;
   max-height: 100%;
   overflow: auto;
-  min-height: 23.0729166667vw;
   position: relative;
   border-radius: 20px;
   padding: 3.125vw 3.6458333333vw 3.125vw 3.6458333333vw;
+}
+
+.modal__in .main_form {
+  padding: 0;
+}
+
+.modal__in .custom-checkbox {
+  text-align: left;
 }
 
 .modal__in .main_form__title {

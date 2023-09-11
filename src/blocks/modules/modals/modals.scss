@@ -31,10 +31,15 @@
         background: #fff;
         max-height: 100%;
         overflow: auto;
-        min-height: vw(443);
         position: relative;
         border-radius: 20px;
         padding: vw(60) vw(70) vw(60) vw(70);
+        .main_form {
+            padding: 0;
+        }
+        .custom-checkbox {
+            text-align: left;
+        }
         .main_form__title {
             text-align: left;
         }
