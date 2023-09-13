@@ -497,20 +497,6 @@ template {
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
   src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
   font-weight: 800;
 }
@@ -525,8 +511,15 @@ template {
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
-  font-weight: 100;
+  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
 }
 
 @font-face {
@@ -534,6 +527,13 @@ template {
   font-display: swap;
   src: url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("ttf");
   font-weight: 600;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
+  font-weight: 100;
 }
 
 body {
@@ -772,6 +772,7 @@ form {
   cursor: pointer;
   font-weight: 500;
   padding: 0.7291666667vw 1.3541666667vw;
+  padding-top: 0.8854166667vw;
 }
 
 .header__burger {
@@ -939,6 +940,7 @@ form {
   font-weight: 500;
   line-height: 140%;
   padding: 1.0416666667vw 1.9270833333vw;
+  padding-top: 1.1979166667vw;
   margin-right: 1.0416666667vw;
   cursor: pointer;
 }
@@ -1127,6 +1129,7 @@ form {
   font-style: normal;
   font-weight: 500;
   padding: 1.0416666667vw 1.5625vw;
+  padding-top: 1.1979166667vw;
 }
 
 .main_tabs__download span {
@@ -1443,6 +1446,7 @@ form {
   font-style: normal;
   font-weight: 500;
   padding: 0.9375vw;
+  padding-top: 1.09375vw;
   cursor: pointer;
   border-radius: 10px;
   background: linear-gradient(249deg, #48CAED -6.1%, #3E9FFE 40.81%, #48CAED 112.23%);
